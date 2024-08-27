@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushi KN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="home">
+        <div class="home-left">
+            <img src="images/myimg.jpg" alt="my logo" class="profile-img">
+        </div>
+        <div class="home-right">
+            <h1 class="name-heading">RUSHI KN</h1>
+            <p class="intro-text">
+                I'm Kaja Naga Rushi, a dedicated MERN stack developer passionate about building seamless web applications. With a strong interest in AI and ML, I continuously explore innovative ways to integrate machine learning into my projects, aiming to create impactful solutions that bridge the gap between development and intelligent systems.
+            </p>
+            <div class="button-container">
+                <a href="resume.pdf" class="custom-button" target="_blank">My Resume</a>
+                <a href="https://www.linkedin.com/in/rushi-kn-b5890b281/" class="custom-button" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/?hl=en" class="custom-button" target="_blank">Instagram</a>
+                <a href="https://x.com/home?lang=en" class="custom-button" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleSwitch = document.getElementById('theme-toggle');
+
+        toggleSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>
